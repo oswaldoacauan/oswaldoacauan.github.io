@@ -1,0 +1,32 @@
+{
+  "name": "oswaldoacauan.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"All tests passed. Kappa\" && exit 1",
+    "gulp": "./node_modules/gulp/bin/gulp.js",
+    "deploy": "npm run gulp build && npm run gulp deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oswaldoacauan/oswaldoacauan.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oswaldoacauan/oswaldoacauan.github.io/issues"
+  },
+  "homepage": "https://github.com/oswaldoacauan/oswaldoacauan.github.io#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.4.0",
+    "cssnano": "^3.7.4",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-htmlmin": "^2.0.0",
+    "gulp-inline": "^0.1.1",
+    "gulp-postcss": "^6.1.1",
+    "gulp-uglify": "^2.0.0"
+  }
+}
