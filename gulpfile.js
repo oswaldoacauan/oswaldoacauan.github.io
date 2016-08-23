@@ -13,6 +13,7 @@ var DEST_PATH = './public/';
 
 gulp.task('clean', function () {
   return del([
+    './.publish',
     DEST_PATH.concat('index.html'),
     DEST_PATH.concat('styles.css'),
   ]);
@@ -26,7 +27,7 @@ gulp.task('cleanCss', function () {
 
 gulp.task('css', function() {
   var processors = [
-    autoprefixer({browsers: ['last 1 version']}),
+    autoprefixer({browsers: ['last 2 version']}),
     cssnano(),
   ];
 
