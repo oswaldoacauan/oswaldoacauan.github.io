@@ -1,0 +1,14 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: GitHub Pages
+        uses: crazy-max/ghaction-github-pages@v1.3.0
+        with:
+          build_dir: public
