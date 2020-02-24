@@ -12,9 +12,9 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: '10.x'
-      - run: npm install
+      - run: npm ci
       - run: npm test
-      - run: npm build
+      - run: npm run build
       -
         name: Deploy
         if: success()
