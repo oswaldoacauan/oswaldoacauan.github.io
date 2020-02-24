@@ -1,3 +1,8 @@
+:root {
+  --primary: #eb3552;
+  --contrast: #e9e8e3;
+}
+
 html {
   font-size: 10px;
 }
@@ -6,13 +11,13 @@ body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   font-size: 1.6rem;
-  color: #e9e8e3;
-  fill: #e9e8e3;
-  background: #eb3552;
+  color: var(--contrast);
+  fill: var(--contrast);
+  background: var(--primary);
 
-  /*color: #eb3552;
-  fill: #eb3552;
-  background: #e9e8e3;*/
+  /*color: var(--primary);
+  fill: var(--primary);
+  background: var(--contrast);*/
 }
 
 a {
@@ -69,7 +74,7 @@ svg {
 .headline > h1 > small {
   font-size: 10%;
   display: inline-block;
-  color: #eb3552;
+  color: var(--primary);
   line-height: -27px;
   top: -.45rem;
   left: -1.4rem;
