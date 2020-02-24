@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"All tests passed. Kappa\" && exit 1",
-    "gulp": "./node_modules/gulp/bin/gulp.js",
-    "deploy": "npm run gulp build && npm run gulp deploy"
+    "build": "gulp build"
   },
   "repository": {
     "type": "git",

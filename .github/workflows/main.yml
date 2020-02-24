@@ -1,15 +1,26 @@
-name: CI
+name: CD
 
-on: [push]
+on: push
 
 jobs:
-  build:
-
+  publish:
     runs-on: ubuntu-latest
-
     steps:
-      - name: GitHub Pages
-        uses: crazy-max/ghaction-github-pages@v1.3.0
+      -
+        name: Checkout
+        uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
         with:
-          build_dir: ./public
+          node-version: '10.x'
+      - run: npm install
+      - run: npm test
+      - run: npm build
+      -
+        name: Deploy
+        if: success()
+        uses: crazy-max/ghaction-github-pages@v1
+        with:
           target_branch: master
+          build_dir: public
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
