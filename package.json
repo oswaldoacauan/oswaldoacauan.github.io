@@ -1,31 +1,20 @@
 {
   "name": "oswaldoacauan.github.io",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "source": "src/index.html",
   "scripts": {
     "test": "echo \"All tests passed. Kappa\" && exit 0",
-    "build": "gulp build"
+    "dev": "parcel watch",
+    "start": "parcel serve",
+    "build": "parcel build ./src/index.html"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/oswaldoacauan/oswaldoacauan.github.io.git"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/oswaldoacauan/oswaldoacauan.github.io/issues"
-  },
-  "homepage": "https://github.com/oswaldoacauan/oswaldoacauan.github.io#readme",
+  "homepage": "https://oswaldoacauan.com",
   "devDependencies": {
-    "autoprefixer": "^6.4.0",
-    "cssnano": "^3.7.4",
-    "del": "^2.2.2",
-    "gulp": "^4.0.0",
-    "gulp-gh-pages": "^0.5.4",
-    "gulp-htmlmin": "^2.0.0",
-    "gulp-inline": "^0.1.1",
-    "gulp-postcss": "^6.1.1",
-    "gulp-uglify": "^2.0.0"
+    "parcel": "^2.0.0-nightly.119",
+    "parcel-plugin-static-files-copy": "^2.3.1"
   }
 }
