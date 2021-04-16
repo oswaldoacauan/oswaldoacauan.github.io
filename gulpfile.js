@@ -59,5 +59,4 @@ gulp.task('deploy', function() {
 });
 
 gulp.task('build', gulp.series('clean', 'css', 'inline', 'minify', 'cleanCss'));
-
 gulp.task('default', gulp.series('build'));
